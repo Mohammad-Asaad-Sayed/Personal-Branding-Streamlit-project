@@ -3,6 +3,14 @@ from pathlib import Path
 import streamlit as st
 from PIL import Image
 
+# --- PAGE CONFIG ---
+st.set_page_config(
+    page_title=PRODUCT_NAME,
+    page_icon=":star:",
+    layout="centered",
+    initial_sidebar_state="collapsed",
+)
+
 analytics_code = """
 <!-- Microsoft Clarity -->
 <script type="text/javascript">
@@ -51,13 +59,7 @@ My FREE Personal Branding Guide will help you:
 **Get instant access to this comprehensive guide - no strings attached!**
 """
 
-# --- PAGE CONFIG ---
-st.set_page_config(
-    page_title=PRODUCT_NAME,
-    page_icon=":star:",
-    layout="centered",
-    initial_sidebar_state="collapsed",
-)
+
 
 # --- MAIN SECTION ---
 st.header(PRODUCT_NAME)

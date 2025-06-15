@@ -48,7 +48,7 @@ with left_col:
     )
 
 with right_col:
-    img_url="https://github.com/Mohammad-Asaad-Sayed/Personal-Branding-Streamlit-project/blob/main/guide-preview.png"
+    img_url="guide-preview.png"
     st.image(img_url, width=450)
 
 # --- GUIDE CONTENTS ---

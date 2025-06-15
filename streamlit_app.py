@@ -3,6 +3,19 @@ from pathlib import Path
 import streamlit as st
 from PIL import Image
 
+clarity_code = """
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "mj3lt3d807");
+</script>
+"""
+
+# Add to your app (best placed in your main script)
+st.components.v1.html(clarity_code, height=0, width=0)
+
 THIS_DIR = Path(__file__).parent if "__file__" in locals() else Path.cwd()
 ASSETS_DIR = THIS_DIR / "assets"
 

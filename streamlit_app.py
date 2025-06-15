@@ -49,7 +49,7 @@ with left_col:
 
 with right_col:
     
-    st.image(https://github.com/Mohammad-Asaad-Sayed/Personal-Branding-Streamlit-project/blob/main/guide-preview.png, width=450)
+    st.image("https://github.com/Mohammad-Asaad-Sayed/Personal-Branding-Streamlit-project/blob/main/guide-preview.png", width=450)
 
 # --- GUIDE CONTENTS ---
 st.subheader("📚 What's Inside The Guide")

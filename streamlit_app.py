@@ -48,7 +48,7 @@ with left_col:
     )
 
 with right_col:
-    guide_image = Image.open(ASSETS_DIR / "https://github.com/Mohammad-Asaad-Sayed/Personal-Branding-Streamlit-project/blob/main/guide-preview.png")
+    guide_image = Image.open(ASSETS_DIR / "guide-preview.png")
     st.image(guide_image, width=450)
 
 # --- GUIDE CONTENTS ---

@@ -3,23 +3,9 @@ from pathlib import Path
 import streamlit as st
 from PIL import Image
 
-# --- PAGE CONFIG ---
-st.set_page_config(
-    page_title=PRODUCT_NAME,
-    page_icon=":star:",
-    layout="centered",
-    initial_sidebar_state="collapsed",
-)
+
 
 analytics_code = """
-<!-- Microsoft Clarity -->
-<script type="text/javascript">
-    (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    })(window, document, "clarity", "script", "mj3lt3d807");
-</script>
 
 <!-- Hotjar Tracking Code -->
 <!-- Hotjar Tracking Code for https://sell-digitial-appucts-using-app-stripe-qgvbo9ldmh4hkqbw8wmm4y.streamlit.app/ -->
@@ -59,7 +45,13 @@ My FREE Personal Branding Guide will help you:
 **Get instant access to this comprehensive guide - no strings attached!**
 """
 
-
+# --- PAGE CONFIG ---
+st.set_page_config(
+    page_title=PRODUCT_NAME,
+    page_icon=":star:",
+    layout="centered",
+    initial_sidebar_state="collapsed",
+)
 
 # --- MAIN SECTION ---
 st.header(PRODUCT_NAME)

@@ -11,7 +11,7 @@ st.set_page_config(
     initial_sidebar_state="collapsed",
 )
 
-analy_code = """\
+clarity_code = """\
 <!-- Microsoft Clarity -->
 <script type="text/javascript">
     (function(c,l,a,r,i,t,y){
@@ -20,7 +20,9 @@ analy_code = """\
         y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
     })(window, document, "clarity", "script", "mj3lt3d807");
 </script>
-
+"""
+st.components.v1.html(clarity_code, height=0, width=0)
+hotjar_code = """
 <!-- Hotjar Tracking Code for https://sell-digitial-appucts-using-app-stripe-qgvbo9ldmh4hkqbw8wmm4y.streamlit.app/ -->
 <script>
     (function(h,o,t,j,a,r){
@@ -35,7 +37,7 @@ analy_code = """\
 """
 
 # Add to your app (best placed in your main script)
-st.components.v1.html(analy_code, height=0, width=0)
+st.components.v1.html(hotjar_code, height=0, width=0)
 
 THIS_DIR = Path(__file__).parent if "__file__" in locals() else Path.cwd()
 ASSETS_DIR = THIS_DIR / "assets"
